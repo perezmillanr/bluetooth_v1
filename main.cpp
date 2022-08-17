@@ -9,6 +9,9 @@ static DigitalOut led(LED1);
 // Create a BufferedSerial object with a default baud rate.
 static BufferedSerial serial_port(USBTX, USBRX);
 
+// Create a BufferedSerial object with default baud rate to connect with Bluetooth Module
+static BufferedSerial serial_port_bluetooth(ARDUINO_UNO_UART_TX,ARDUINO_UNO_UART_RX);
+
 int main(void)
 {
     // Set desired properties (9600-8-N-1).
